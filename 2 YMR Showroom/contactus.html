@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YMR Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.querySelector("#form_box form");
+
+            if (contactForm) {
+                contactForm.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    alert("Your message has been submitted successfully!");
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+
+
+</head>
+<body>
+    <section id="header">
+        <a><img src="image/logo/YMR logo.png" class="logo" alt="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="bike.html">Bikes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a class="active" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cont_banner">
+        <div class="c_b">
+            <img src="image/banner/contactpagebanner.jpg">
+        </div>
+    </section>
+
+    <section id="form_box">
+        <form>
+            <h2>Get In Touch</h2>
+            <p>For Best Offers for your dream vehicle</p> <br>
+            <input type="text" placeholder="Your Name">
+            <input type="number" placeholder="Phone No">
+            <input type="email" placeholder="Email Id">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button>Submit</button>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="image/photo/yash.jpg">
+                <p><span>Yash</span> Owner <br> Phone: +91 8178358946 <br> Email: yash@gmail.com</p> 
+            </div>
+
+            <div>
+                <img src="image/photo/photo.jpg">
+                <p><span>Yash</span> Sales Manager <br> Phone: +91 8178358946 <br> Email: yash@gmail.com</p>
+            </div>
+
+            <div>
+                <img src="image/photo/yash.jpg">
+                <p><span>Yash</span> Customer Service Executive <br> Phone: +91 8178358946 <br> Email: yash@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cont_us">
+        <div class="cont_text">
+            <h2>Sign Up for Newsletters</h2>
+            <p>Get E-mail updates about our New Lanches and Special offers.</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+         <div class="col">
+            <img class="logo" src="image/logo/YMR logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Plot NO-23, Bamnoli, Dwarka Sector-28</p>
+            <p><strong>Phone No:</strong> +918178358946</p>
+            <p><strong>Hours:</strong> 08:00 AM to 8:00 PM, Mon to Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="aboutus.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google PLay Store</p>
+            <div class="row">
+                <img src="image/pay/app.jpg">
+                <img src="image/pay/play.jpg">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="image/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p>© 2025 YASH- YMR Showroom</p>
+        </div>
+    </footer>
+</body>
+</html>
